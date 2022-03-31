@@ -17,8 +17,8 @@ jobs:
       - name: Build and push
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:push -a streamlit-test web
+        run: heroku container:push -a tranquil-coast-12504 web
       - name: Release
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:release -a streamlit-test web
+        run: heroku container:release -a tranquil-coast-12504 web
